@@ -1,11 +1,11 @@
 package testcases;
-import BaseClass.BaseClass;
+import BaseClass.Baseclass;
 import PageObjectClasses.HomePageObjectClass;
 import PageObjectClasses.LoginPageObjectClass;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class HomeTest extends BaseClass {
+public class HomeTest extends Baseclass {
     @Test(priority = 1)
     public void homepagelogin() {
         LoginPageObjectClass Login = new LoginPageObjectClass();

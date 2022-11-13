@@ -1,11 +1,11 @@
 package PageObjectClasses;
 
-import BaseClass.BaseClass;
+import BaseClass.Baseclass;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-public class LoginPageObjectClass extends BaseClass {
+public class LoginPageObjectClass extends Baseclass {
     @FindBy(xpath = "//*[@id=\"root\"]/div/div[1]")
     WebElement swaglabslogo;
     @FindBy(xpath = "//*[@id=\"user-name\"]")

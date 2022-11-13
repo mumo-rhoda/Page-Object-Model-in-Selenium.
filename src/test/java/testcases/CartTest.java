@@ -1,12 +1,11 @@
 package testcases;
 
-import BaseClass.BaseClass;
+import BaseClass.Baseclass;
 import PageObjectClasses.CartPageObjectClass;
-import PageObjectClasses.CheckoutPageObjectClass;
 import PageObjectClasses.HomePageObjectClass;
 import org.testng.annotations.Test;
 
-public class CartTest extends BaseClass {
+public class CartTest extends Baseclass {
     HomePageObjectClass homepage;
     CartPageObjectClass cart;
     @Test (priority = 2)

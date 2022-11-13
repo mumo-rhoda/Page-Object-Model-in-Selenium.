@@ -8,10 +8,9 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.time.Duration;
 import java.util.Properties;
 
-public class BaseClass {
+public class Baseclass {
 
     public static Properties prop;
     public static WebDriver driver;
@@ -43,8 +42,8 @@ public class BaseClass {
         }
         //Maximize the screen
         driver.manage().window().maximize();
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
-        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
+//        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(20));
+//        driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(10));
         //Launching the URL
         driver.get(prop.getProperty("url"));
 

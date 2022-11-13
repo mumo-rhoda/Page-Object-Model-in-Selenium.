@@ -1,13 +1,13 @@
 package testcases;
 
-import BaseClass.BaseClass;
+import BaseClass.Baseclass;
 import PageObjectClasses.CheckoutPageObjectClass;
 import PageObjectClasses.CompleteObjectClass;
 import PageObjectClasses.HomePageObjectClass;
 import PageObjectClasses.OrderConfirmObjectClass;
 import org.testng.annotations.Test;
 
-public class CheckoutTest extends BaseClass {
+public class CheckoutTest extends Baseclass {
     CheckoutPageObjectClass checkout;
     OrderConfirmObjectClass orderconfirm;
     CompleteObjectClass complete;

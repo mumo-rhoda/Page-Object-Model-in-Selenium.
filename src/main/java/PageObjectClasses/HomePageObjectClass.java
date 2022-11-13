@@ -4,7 +4,7 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
-import static BaseClass.BaseClass.driver;
+import static BaseClass.Baseclass.driver;
 
 public class HomePageObjectClass {
 
@@ -16,7 +16,6 @@ public class HomePageObjectClass {
     WebElement shoppingcart;
     @FindBy(xpath = "//*[@id=\"add-to-cart-sauce-labs-backpack\"]")
     WebElement product1;
-
     public HomePageObjectClass (){
         PageFactory.initElements(driver, this);
     }

@@ -1,13 +1,13 @@
 package testcases;
 
-import BaseClass.BaseClass;
+import BaseClass.Baseclass;
 import PageObjectClasses.LoginPageObjectClass;
 import org.testng.Assert;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
 
-public class LoginTest extends BaseClass {
+public class LoginTest extends Baseclass {
     LoginPageObjectClass Loginpage;
 
     @BeforeSuite
@@ -19,13 +19,13 @@ public class LoginTest extends BaseClass {
     public void verifyloginpage(){
         Loginpage = new LoginPageObjectClass();
         boolean result = Loginpage.validateLogo();
-        Assert.assertTrue(result);
+        Assert.assertTrue(result, String.valueOf(true));
 
     }
 
     @AfterSuite
-    public void close(){
-        driver.close();
+    public void teardown(){
+        driver.quit();
     }
 
 }
